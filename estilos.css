@@ -1,0 +1,58 @@
+body {
+    font-family: var(--fuente-texto);
+    color: var(--gris-texto);
+    background-color: var(--azul-hielo);
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    background-color: aquamarine;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+header {
+    background-color: aqua;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 18px 48px;
+    background-color: var(rgb(47, 213, 255));
+    box-shadow: var(--sombra-sm);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid var(--borde);
+}
+
+header nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background: var(--azul-medio);
+    transition: width .25s ease;
+}
+.formulario {
+    max-width: 800px;
+    margin: 44px auto;
+    background: var(--blanco);
+    padding: 34px 40px;
+    border-radius: var(--radio-lg);
+    box-shadow: var(--sombra-md);
+    border: 1px solid var(--borde);
+}
+
+.productos {
+    align-items: center ;
+    padding: 20px;
+}
+
+button {
+    background-color: rgb(137, 255, 255);
+}
